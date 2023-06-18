@@ -18,7 +18,7 @@ export default function Home() {
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
-        scrub: true,
+        scrub: 0.25,
         start: 0,
         end: window.innerHeight,
         onUpdate: e => direction = e.direction * -1
